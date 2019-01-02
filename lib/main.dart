@@ -31,26 +31,28 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
-      body: new Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          new FlatButton(
-            child: Text("文本示例"),
-            color: Colors.blue,
-            highlightColor: Colors.blue[700],
-            colorBrightness: Brightness.dark,
-            splashColor: Colors.grey,
-            shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-            onPressed: () {
-                //导航到新路由
-              Navigator.push( context,
-                new MaterialPageRoute(builder: (context) {
-                  return new MyText();
-                })
-              );
-            },
-          )
-        ],
+      body: Center(
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new FlatButton(
+              child: Text("文本示例"),
+              color: Colors.blue,
+              highlightColor: Colors.blue[700],
+              colorBrightness: Brightness.dark,
+              splashColor: Colors.grey,
+              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+              onPressed: () {
+                  //导航到新路由
+                Navigator.push( context,
+                  new MaterialPageRoute(builder: (context) {
+                    return new MyText();
+                  })
+                );
+              },
+            )
+          ],
+        ),
       )
     );
   }
