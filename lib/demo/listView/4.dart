@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 
-class MyListView3 extends StatelessWidget {
+class MyListView4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title:Text('listView-3')
+            title:Text('listView-4')
         ),
-        body:ListView.builder(
-          itemExtent: 50.0,
-          itemCount: 20,
+        body:ListView.separated(
+//          itemExtent: 50.0,
+          itemCount: 10,
           itemBuilder: (BuildContext context,int index){
             return ListTile(
                 title: Text(
@@ -22,7 +22,14 @@ class MyListView3 extends StatelessWidget {
                   ),
                 )
             );
-          }
+          },
+          separatorBuilder: (BuildContext context,int index){
+              if(index % 2 == 0){
+                  return Divider(color: Colors.blue,);
+              }else{
+                  return Divider(color: Colors.green,);
+              }
+          },
         )
     );
   }
