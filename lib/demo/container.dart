@@ -30,7 +30,7 @@ class MyContainer extends StatelessWidget {
                 width: 2.0,
                 color: Colors.black
               ),
-              borderRadius: BorderRadius.all(Radius.circular(10.0)),  
+              borderRadius: BorderRadius.all(Radius.circular(10.0)),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black12,
