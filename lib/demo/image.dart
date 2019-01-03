@@ -6,7 +6,7 @@ class MyImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("text demo"),
+        title: Text("image demo"),
       ),
       body: Container(
         padding: EdgeInsets.only(top:20,bottom: 20),
