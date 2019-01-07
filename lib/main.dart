@@ -4,6 +4,7 @@ import './demo/container.dart';
 import './demo/image.dart';
 import './demo/listView/index.dart';
 import './demo/gridView/index.dart';
+import './demo/row/index.dart';
 
 void main() => runApp(new MyApp());
 
@@ -115,6 +116,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push( context,
                   new MaterialPageRoute(builder: (context) {
                     return new MyGridView();
+                  })
+                );
+              },
+            ),
+            new FlatButton(
+              child: Text("Row示例"),
+              color: Colors.blue,
+              highlightColor: Colors.blue[700],
+              colorBrightness: Brightness.dark,
+              splashColor: Colors.grey,
+              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+              onPressed: () {
+                  //导航到新路由
+                Navigator.push( context,
+                  new MaterialPageRoute(builder: (context) {
+                    return new MyRow();
                   })
                 );
               },
