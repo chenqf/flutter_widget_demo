@@ -9,7 +9,7 @@ class MyStack2 extends StatelessWidget {
         children: <Widget>[
           CircleAvatar(
             backgroundImage: new NetworkImage('http://img1.tg-img.com/head/201609/30/4D692110-1FC2-4EB8-A843-C8CCD8E8B6A7.jpg'),
-            radius: 100.0,
+            radius: 100.0, // 圆形的半径
           ),
           Container(
             decoration: BoxDecoration(
