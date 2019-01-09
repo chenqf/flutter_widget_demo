@@ -1,14 +1,6 @@
 import 'package:flutter/material.dart';
-import './demo/text.dart';
-import './demo/container.dart';
-import './demo/image.dart';
-import './demo/card.dart';
-import './demo/listView/index.dart';
-import './demo/gridView/index.dart';
-import './demo/row/index.dart';
-import './demo/column/index.dart';
-import './demo/stack/index.dart';
-import './demo/navigator/index.dart';
+import './demo/index.dart';
+import './example/index.dart';
 
 void main() => runApp(new MyApp());
 
@@ -41,75 +33,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
           children: <Widget>[
             new FlatButton(
-              child: Text("文本示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyText();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("容器Container示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyContainer();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("Image示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyImage();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("Card示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyCard();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("ListView示例"),
+              child: Text("基本组件展示"),
               color: Colors.blue,
               highlightColor: Colors.blue[700],
               colorBrightness: Brightness.dark,
@@ -118,92 +45,28 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 //导航到新路由
                 Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyListView();
-                  })
+                    new MaterialPageRoute(builder: (context) {
+                      return MyBaseDemo();
+                    })
                 );
               },
             ),
             new FlatButton(
-              child: Text("GridView示例"),
+              child: Text("实战展示"),
               color: Colors.blue,
               highlightColor: Colors.blue[700],
               colorBrightness: Brightness.dark,
               splashColor: Colors.grey,
               shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
               onPressed: () {
-                  //导航到新路由
+                //导航到新路由
                 Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyGridView();
-                  })
+                    new MaterialPageRoute(builder: (context) {
+                      return MyBaseExample();
+                    })
                 );
               },
-            ),
-            new FlatButton(
-              child: Text("Row示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyRow();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("Column示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyColumn();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("Stack示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                Navigator.push( context,
-                  new MaterialPageRoute(builder: (context) {
-                    return new MyStack();
-                  })
-                );
-              },
-            ),
-            new FlatButton(
-              child: Text("Navigator示例"),
-              color: Colors.blue,
-              highlightColor: Colors.blue[700],
-              colorBrightness: Brightness.dark,
-              splashColor: Colors.grey,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-              onPressed: () {
-                  //导航到新路由
-                  Navigator.push( context,
-                      new MaterialPageRoute(builder: (context) {
-                        return new MyNavigator();
-                      })
-                  );
-                }
-              ),
+            )
           ],
         ),
       )

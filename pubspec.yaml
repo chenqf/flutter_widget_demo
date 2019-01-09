@@ -40,6 +40,7 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  # 用于配置项目中的静态文件位置
   assets:
     - images/feiniu.jpg
 #    - images/a_dot_ham.jpeg

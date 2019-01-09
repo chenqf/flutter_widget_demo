@@ -11,11 +11,11 @@ class MyCard extends StatelessWidget {
             title: Text(
               '大连市中山区大商新玛特',
               style: TextStyle(
-                fontWeight: FontWeight.w800
+                  fontWeight: FontWeight.w800
               ),
             ),
             subtitle: Text(
-              '工作地点'
+                '工作地点'
             ),
             leading: Icon(Icons.access_alarm),
           ),
@@ -77,13 +77,13 @@ class MyCard extends StatelessWidget {
       ),
     );
     return Scaffold(
-      appBar: AppBar(
-        title: Text("card demo"),
-      ),
-      body: Container(
-        padding: EdgeInsets.only(top:20,bottom: 20),
-        child: card
-      )
+        appBar: AppBar(
+          title: Text("card demo"),
+        ),
+        body: Container(
+            padding: EdgeInsets.only(top:20,bottom: 20),
+            child: card
+        )
     );
   }
 }

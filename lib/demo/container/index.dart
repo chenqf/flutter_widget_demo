@@ -24,18 +24,18 @@ class MyContainer extends StatelessWidget {
 //                radius: 1
 //              ),
               gradient:LinearGradient(
-                  colors: [Colors.purple,Colors.red,Colors.orange],
+                colors: [Colors.purple,Colors.red,Colors.orange],
               ),
               border: Border.all(
-                width: 2.0,
-                color: Colors.black
+                  width: 2.0,
+                  color: Colors.black
               ),
               borderRadius: BorderRadius.all(Radius.circular(10.0)),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black12,
-                  offset: Offset(2.0, 2.0),
-                  blurRadius: 4.0
+                    color: Colors.black12,
+                    offset: Offset(2.0, 2.0),
+                    blurRadius: 4.0
                 )
               ],
             ),
@@ -43,8 +43,8 @@ class MyContainer extends StatelessWidget {
             child: Text(
               'Hello flutter container',
               style: TextStyle(
-                fontSize: 16.0,
-                color: Colors.black
+                  fontSize: 16.0,
+                  color: Colors.black
               ),
             ),
           ),
